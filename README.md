@@ -17,10 +17,13 @@ http-server
 You should see something like the following:
 
 C:\projects\F1-masters-app>http-server
+
 Starting up http-server, serving ./
+
 Available on:
   http://192.168.0.5:8080
   http://127.0.0.1:8080
+  
 Hit CTRL-C to stop the server
 
 Open your browser and go to the address http://localhost:8080 and you should see your local website. 
