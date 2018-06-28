@@ -1,0 +1,42 @@
+/* app css stylesheet */
+
+body {
+    padding-top: 80px;
+    padding-bottom: 180px;
+}
+
+.race.panel .panel-heading {
+    font-weight: lighter !important;
+    font-size: 1.2em;
+}
+
+.race.panel .panel-footer {
+    font-weight: lighter !important;
+}
+
+.race-results {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.race-results td, .race-results th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.race-results tr:nth-child(even){background-color: #f2f2f2;}
+
+.race-results tr:hover {background-color: #ddd;}
+
+.race-results th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.matchClass{
+    background-color: #6df973;
+}

@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="yearly-winner-data">
+        <div class="row">
+            <div class="col-xs-12">
+                <div>
+                    <h3>Yearwise Race winners 2005 till 2015!</h3>
+
+                    <form class="form-inline" role="form">
+                        <span class="btn-group" >
+                            <button ng-repeat="item in yearlyWinners.MRData.StandingsTable.StandingsLists" ng-click="setSeason(item.season, item.DriverStandings[0].Driver.givenName)" type="submit" class="btn btn-default">{{item.season}} -- {{item.DriverStandings[0].Driver.givenName}}  {{item.DriverStandings[0].Driver.familyName}}</button><br/>
+                        </span>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br/><br/>
+    <div class="race-result-data" ng-show="true">
+        <div class="row">
+                <div class="race panel panel-primary">
+                    <div class="panel-heading">Race Results </div>
+                    <div class="panel-body">
+                        <table class="race-results" ng-show="winnerList">
+                            <tr><th>Round</th><th>Race Name</th><th>Driver</th></tr>
+                            <tr ng-repeat="race in winnerList.MRData.RaceTable.Races">
+                                <td ng-class="yrWinner == race.Results[0].Driver.givenName ? 'matchClass' : '' ">{{race.round}}</td>
+                                <td ng-class="yrWinner == race.Results[0].Driver.givenName ? 'matchClass' : '' ">{{race.raceName}}</td>
+                                <td ng-class="yrWinner == race.Results[0].Driver.givenName ? 'matchClass' : '' ">{{race.Results[0].Driver.givenName}} {{race.Results[0].Driver.familyName}}</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="panel-footer">
+                        <small>
+                        </small>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
